@@ -28,7 +28,7 @@ Container(storage, "Object Storage", "S3", "File storage")
 
 ' Main flow
 Rel(customer, cdn, "HTTPS")
-Rel(cdn, lb, "HTTPS")
+Rel(customer, lb, "HTTPS")
 Rel(lb, apps, "HTTPS")
 Rel(apps, lb_2, "SQL")
 Rel(lb_2, db_master, "Write")
