@@ -6,8 +6,8 @@ title Simplified Container diagram with Clusters
 Person(customer, "Client", "Uses web browser or mobile app.")
 
 System_Ext(cdn, "CDN", "Content Delivery Network", $sprite="internet")
-System_Ext(lb_2, "Load Balancer", "Distributes traffic", $sprite="internet")
-System_Ext(lb, "Database Load Balancer", "Distributes traffic", $sprite="elasticsearch")
+System_Ext(lb_2, "Database Load Balancer", "Distributes traffic", $sprite="internet")
+System_Ext(lb, "Load Balancer", "Distributes traffic", $sprite="elasticsearch")
 
 Container_Boundary(apps, "Application Layer") {
     Container(app1, "App Instance 1", "Java/Python/Node", "Business logic")
